@@ -1,0 +1,39 @@
+head {
+    width: 100%
+}
+.banner {
+    background-color: #1f2235;
+    display: flex;
+
+    
+    /* margin: -10px; */
+}
+
+.navigation-bar > div {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    /* align-items: center;
+    justify-content: center; */
+    height: 80px;
+    width: 1200px;
+   border: 2px solid blue;
+  
+}
+
+/* nav {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center; */
+
+}
+a{
+    /* gap: 20px; */
+    float: right;
+    padding: 20px;
+    font-size: 22px;
+    /* font-weight: 20px; */
+    color: white;
+    text-align: center;
+    
+}

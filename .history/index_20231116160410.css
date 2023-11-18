@@ -1,0 +1,22 @@
+.navigation-bar {
+    border: 2px solid red;
+    padding: 20px;
+    background-color: #1f2235;
+    margin: -px;
+}
+
+#logo {
+    cursor: pointer;
+}
+nav {
+    float: right;
+}
+a{
+    /* gap: 20px; */
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 20px;
+    color: white;
+    text-align: center;
+    
+}

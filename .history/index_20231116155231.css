@@ -1,0 +1,12 @@
+.navigation-bar {
+    border: 2px solid red;
+    padding: 20px;
+}
+
+nav {
+    float: right;
+}
+a{
+    gap: 20px;
+    padding: 20px;
+}

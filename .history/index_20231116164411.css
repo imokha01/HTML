@@ -1,0 +1,29 @@
+.navigation-bar {
+    background-color: #1f2235;
+    
+    margin: -10px;
+}
+
+.navigation-bar > div {
+    display: flex;
+    height: 100px;
+    width: 700px;
+    float
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center; */
+}
+a{
+    /* gap: 20px; */
+    padding: 20px;
+    font-size: 22px;
+    /* font-weight: 20px; */
+    color: white;
+    text-align: center;
+    
+}

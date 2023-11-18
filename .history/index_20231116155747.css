@@ -1,0 +1,17 @@
+.navigation-bar {
+    border: 2px solid red;
+    padding: 20px;
+    background-color: #1f2235;
+}
+
+nav {
+    float: right;
+}
+a{
+    /* gap: 20px; */
+    padding: 20px;
+    
+    font-weight: 20px;
+    color: white;
+    
+}
