@@ -69,45 +69,49 @@ li > a {
 .home_page {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: #1f2235;
-  height: 90vh;
-  /* padding: 70px; */
-  position: relative;
+  height: 88vh;
+  margin-top: 69px;
+  margin-left: 30p;
 }
+
+.my_name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 50px 100px 0 150px;
+}
+
+h1, 
+.my_name p,
+.my_name span,
+.my_name button {
+  margin: 0px;
+}
+
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 57px;
   color: white;
-  position: absolute;
-  left: 150px;
-  top: 100px;
   letter-spacing: 10px;
-  padding: 30px;
-  /* margin-top: -60px;
-  margin-bottom: -10px; */
+  width: max-content;
 }
 
 .my_name p {
   font-family: "Roboto", sans-serif;
   font-size: 35px;
   color: white;
-  position: absolute;
-  letter-spacing: 10px;
-  left: 190px;
-  top: 80px;
-  padding-bottom: 30px;
 }
 
 .my_name span {
   font-size: 25px;
   color: red;
-  position: absolute;
   letter-spacing: 5px;
-  left: 190px;
-  top: 230px;
+
 }
 
 .my_name button {
@@ -116,9 +120,6 @@ h1 {
   font-size: 20px;
   border-radius: 30px;
   cursor: pointer;
-  position: absolute;
-  left: 200px;
-  top: 280px;
 }
 
 .my_name button:hover {
@@ -129,17 +130,14 @@ h1 {
 .details {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 50vw;
 }
 
 .news {
   display: flex;
   flex-direction: row;
-  width: 40%;
   height: inherit;
-  position: absolute;
-  left: 150px;
-  top: 500px;
+  margin: 50px -116px 0 150px;
 }
 
 .client_no {
@@ -154,10 +152,8 @@ h1 {
   font-family: "Lato", sans-serif;
   font-size: 50px;
   color: white;
-  padding: 30px;
-  position: absolute;
-  top: -230px;
-  /* margin-top: -10px; */
+  padding: 0px 30px 10px 20px;
+  margin: 0px;
 }
 
 .client_no h4,
@@ -165,10 +161,8 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   color: white;
-  padding: 30px;
-  position: absolute;
-  top: -150px;
-  /* margin-top: -100px; */
+  padding: 0px 30px 30px 20px;
+  margin: 0px; 
 }
 
 .client_no p,
@@ -176,10 +170,9 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-style: italic;
-  text-align: left;
-  padding: 30px 0px 0px 30px;
+  padding: 10px;
   color: white;
-  margin-top: -80px;
+  margin: 0px;
   line-height: 40px;
 }
 .award_no {
@@ -188,83 +181,92 @@ h1 {
   justify-content: flex-start;
   align-items: flex-start;
 }
+.my_image {
+  width: 50%;
+  height: 70vh;
+  object-fit: fill;
+}
 
 .my_image img {
-  object-fit: fill;
-  top: 100px;
+  
+  top: 54px;
   height: 550px;
   position: absolute;
-  right: 180px;
+  right: 60px;
 }
 
 /* About page styling */
 .about_page {
   background-color: #ccd3db;
-  position: relative;
-  height: 90%;
-  top: -50px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+ padding: 40px;
+  height: 85vh;
 }
 
 .about_page h2 {
   font-size: 48px;
   font-family: "Roboto", sans-serif;
-  position: absolute;
-  left: 20%;
-  top: 40px;
+  margin: 0px;
+  padding: 20px 0 10px 120px;
+
 }
 
 .about_page h5 {
   font-size: 30px;
-  position: absolute;
-  left: 20%;
-  top: -10px;
+  margin: 0px;
+  padding-left: 120px;
   font-family: "Roboto", sans-serif;
 }
 
 .about_page p {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  position: absolute;
-  width: 60vw;
-  left: 20%;
-  top: 150px;
+  padding: 10px 120px 10px 120px;
+  margin: 0px;
 }
 
 .skill_container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 20px 10px 150px;
+
+}
+.skill_tag {
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-  position: relative;
-  gap: 60px;
-  top: 260px;
-  left: 18%;
-  width: 60%;
-  /* height: 80%; */
-  margin: 50px;
+  gap: 40px;
+  
 }
 
 .fa-solid {
   font-size: 40px;
-  padding: 10px;
+  padding: 30px;
   margin-bottom: -20px;
 }
 
 .fa-solid + h4 {
-  font-size: px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 10px 20px 5px  30px;
   margin-top: 2px;
 }
 
 .fa-solid ~ button {
   border: none;
+  font-size: 15px;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 0px 10px 20px 30px;
+  margin: 0;
 }
 .fa-solid ~ button:hover {
   color: orange;
   cursor: pointer;
-  border-bottom: 2px solid #272e38;
+  padding-bottom: 2px solid #272e38;
 }
 
 .design,
@@ -272,29 +274,25 @@ h1 {
 .software,
 .application {
   background-color: #ffffff;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 #para {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  bottom: -130px;
+  width: 73vw;
+  height: 90px;
+  margin: 20px -150px 0 150px;
   background-color: #1f2235;
 }
 
 #para p {
   color: white;
-  top: -10px;
   font-size: 20px;
 }
 
 #para button {
   cursor: pointer;
-  position: absolute;
-  left: 190px;
-  top: 50px;
+  margin-left: 120px;
   padding: 10px;
   border: none;
 }
@@ -306,17 +304,22 @@ h1 {
 
 /* Work Page Styling */
 .works {
-  height: 100vh;
-  padding: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: #1f2235;
-  position: relative;
-  top: -50px;
+  margin: 0px;
+  height: 100vh;
+  padding: 30px 80px 100px 80px ;
+
+  background-color: #1f2235;
 }
 .workContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 20px;
-  padding: 60px;
+  padding: 30px;
 }
 
 #one {
@@ -347,11 +350,10 @@ h1 {
 }
 
 .works h2 {
-  position: absolute;
-  top: 50px;
-  left: 40%;
   font-size: 40px;
   color: white;
+  margin: 5px auto 5px auto;
+  gap:10px;
 }
 
 /* Resume Page */
@@ -359,8 +361,10 @@ h1 {
 .resume  {
   background-color: #ccd3db;
   height:85vh;
-  position: relative;
-  top: -50px;
+  display: flex;
+  flex-direction: column;
+  /* position: relative;
+  top: -50px; */
 }
 
 .resumeContainer {
@@ -368,17 +372,17 @@ h1 {
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  position: absolute;
+  /* position: absolute;
   top: 120px;
   height: 70%;
-  left: 240px;
+  left: 240px; */
 }
 
 #resume_para {
   font-family: ;
   background-color: #0169f6;
   padding: 10px 20px;
-  width: 50%;
+  width: 30%;
   height: 30%;
   border-radius: 20px;
   box-shadow: 10px 10px ;
@@ -389,6 +393,7 @@ h1 {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
   margin-top: 5px;
+  margin-bottom: 2px;
   padding-left: 15px
 }
 
@@ -397,8 +402,7 @@ h1 {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   padding-left: 15px;
-  position: absolute;
-  top: 50px;
+  margin-top: 10px;
   font-style: italic;
 
 }
@@ -407,9 +411,7 @@ h1 {
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  position: absolute;
-  top: 80px;
-  left:  40px;
+  margin-left: 10px;
   cursor: pointer; 
   font-size: 15px;
 }
@@ -422,9 +424,9 @@ h1 {
 .resume h2 {
   font-size: 40px;
   text-align: center;
-  position: absolute;
+  /* position: absolute;
   left:45%;
-  top: 20px;
+  top: 20px; */
 }
 
 /* Contact page */
@@ -460,7 +462,7 @@ h1 {
 
 form {
   width: 60vw;
-  height: 68.6vh;
+  height: 68.8vh;
   background-color: #0169f6;
   padding: 40px;
 }
